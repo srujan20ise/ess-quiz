@@ -61,11 +61,29 @@ button{
 
 <script>
 // ---------- QUESTIONS ----------
-const questions = [
- {q:"Primary source of energy?", o:["Sun","Wind","Water","Soil"], a:0},
- {q:"BOD measures?", o:["Organic pollution","pH","Salinity","Hardness"], a:0},
- {q:"Which gas causes acid rain?", o:["SO₂","CO₂","CH₄","O₂"], a:0}
-];
+// ---------- LOAD QUESTIONS FROM JSON ----------
+let questions = [];
+
+fetch("questions.json")
+  .then(response => response.json())
+  .then(data => {
+    questions = data.map(q => ({
+      q: q.question,
+      o: q.options,
+      a: q.answer
+    }));
+
+    // reset timer based on number of questions
+    timeLeft = questions.length * 60;
+
+    loadQ();
+    startTimer();
+  })
+  .catch(error => {
+    alert("Error loading questions.json");
+    console.error(error);
+  });
+
 
 // ---------- VARIABLES ----------
 let i = 0;
@@ -165,8 +183,7 @@ function showResult(){
 }
 
 // ---------- START ----------
-loadQ();
-startTimer();
+
 
 </script>
 
