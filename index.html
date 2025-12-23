@@ -67,17 +67,22 @@ let questions = [];
 fetch("questions.json")
   .then(response => response.json())
   .then(data => {
-    questions = data.map(q => ({
-      q: q.question,
-      o: q.options,
-      a: q.answer
-    }));
+   // convert JSON format to quiz format
+let allQuestions = data.map(q => ({
+  q: q.question,
+  o: q.options,
+  a: q.answer
+}));
 
-    // reset timer based on number of questions
-    timeLeft = questions.length * 60;
+// shuffle and pick 100 questions
+questions = shuffle(allQuestions).slice(0, 100);
 
-    loadQ();
-    startTimer();
+// set time: 1 minute per question
+timeLeft = questions.length * 60;
+
+loadQ();
+startTimer();
+
   })
   .catch(error => {
     alert("Error loading questions.json");
