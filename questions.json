@@ -1,0 +1,17 @@
+[
+  {
+    "question": "Primary source of energy?",
+    "options": ["Sun", "Wind", "Water", "Soil"],
+    "answer": 0
+  },
+  {
+    "question": "BOD measures?",
+    "options": ["Organic pollution", "pH", "Salinity", "Hardness"],
+    "answer": 0
+  },
+  {
+    "question": "Which gas causes acid rain?",
+    "options": ["SO₂", "CO₂", "CH₄", "O₂"],
+    "answer": 0
+  }
+]
