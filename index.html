@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>ESS Quiz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background:#0f172a;
-      color:white;
-      text-align:center;
-      padding-top:50px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>ESS Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
+  margin:0;
+}
+.container{
+  max-width:800px;
+  margin:auto;
+  padding:20px;
+}
+.card{
+  background:#020617;
+  padding:20px;
+  border-radius:10px;
+}
+.option{
+  border:1px solid #334155;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  cursor:pointer;
+}
+.option.selected{
+  background:#2563eb;
+}
+button{
+  background:#38bdf8;
+  border:none;
+  padding:10px 16px;
+  border-radius:6px;
+  margin-top:10px;
+}
+</style>
 </head>
-<body>
 
-  <h1>Environmental Studies Quiz</h1>
-  <p>If you can see this, GitHub Pages works ✅</p>
+<body>
+<div class="container">
+
+<h2>Environmental Studies Quiz</h2>
+
+<div id="quiz" class="card">
+  <h3 id="qno"></h3>
+  <p id="question"></p>
+  <div id="options"></div>
+  <button onclick="nextQ()">Next</button>
+</div>
+
+</div>
+
+<script>
+const questions = [
+ {q:"Primary source of energy?", o:["Sun","Wind","Water","Soil"], a:0},
+ {q:"BOD measures?", o:["Organic pollution","pH","Salinity","Hardness"], a:0},
+ {q:"Which gas causes acid rain?", o:["SO₂","CO₂","CH₄","O₂"], a:0}
+];
+
+let i = 0;
+let selected = null;
+
+loadQ();
+
+function loadQ(){
+  const q = questions[i];
+  document.getElementById("qno").innerText = "Question " + (i+1);
+  document.getElementById("question").innerText = q.q;
+  const opt = document.getElementById("options");
+  opt.innerHTML = "";
+  q.o.forEach((text,idx)=>{
+    const div = document.createElement("div");
+    div.className = "option";
+    div.innerText = text;
+    div.onclick = () => selectOpt(idx, div);
+    opt.appendChild(div);
+  });
+}
+
+function selectOpt(idx, div){
+  document.querySelectorAll(".option").forEach(o=>o.classList.remove("selected"));
+  div.classList.add("selected");
+  selected = idx;
+}
+
+function nextQ(){
+  if(selected === null){
+    alert("Please select an option");
+    return;
+  }
+  selected = null;
+  i++;
+  if(i < questions.length){
+    loadQ();
+  }else{
+    alert("Quiz finished!");
+  }
+}
+</script>
 
 </body>
 </html>
