@@ -1,17 +1,182 @@
 [
   {
-    "question": "Primary source of energy?",
-    "options": ["Sun", "Wind", "Water", "Soil"],
+    "question": "Which of the following is not an abiotic component of an ecosystem?",
+    "options": ["Bacteria", "Temperature", "Soil", "Water"],
     "answer": 0
   },
   {
-    "question": "BOD measures?",
-    "options": ["Organic pollution", "pH", "Salinity", "Hardness"],
+    "question": "In the 10% law of energy flow, if plants capture 10,000 kcal of energy, how much will be available to herbivores?",
+    "options": ["1000 kcal", "10 kcal", "5000 kcal", "100 kcal"],
     "answer": 0
   },
   {
-    "question": "Which gas causes acid rain?",
-    "options": ["SO₂", "CO₂", "CH₄", "O₂"],
+    "question": "Which of the following is a biotic component of an ecosystem?",
+    "options": ["Fungi", "Light", "Temperature", "Water"],
+    "answer": 0
+  },
+  {
+    "question": "The primary source of energy driving ecological cycles is:",
+    "options": ["Solar radiation", "Wind", "Soil minerals", "Water cycle"],
+    "answer": 0
+  },
+  {
+    "question": "Which ecosystem has the highest net primary productivity per unit area?",
+    "options": ["Tropical rainforest", "Coral reefs", "Open ocean", "Desert scrub"],
+    "answer": 0
+  },
+  {
+    "question": "Which ecological pyramid can never be inverted?",
+    "options": ["Pyramid of energy", "Pyramid of biomass", "Pyramid of number", "All pyramids"],
+    "answer": 0
+  },
+  {
+    "question": "Energy flow in an ecosystem is:",
+    "options": ["Unidirectional", "Cyclic", "Bidirectional", "Reversible"],
+    "answer": 0
+  },
+  {
+    "question": "Which process directly connects biotic and abiotic components?",
+    "options": ["Photosynthesis", "Predation", "Competition", "Parasitism"],
+    "answer": 0
+  },
+  {
+    "question": "In a food chain, green plants are:",
+    "options": ["Producers", "Primary consumers", "Secondary consumers", "Decomposers"],
+    "answer": 0
+  },
+  {
+    "question": "The interconnected network of food chains is called:",
+    "options": ["Food web", "Food chain", "Food pyramid", "Trophic level"],
+    "answer": 0
+  },
+
+  {
+    "question": "India is recognized as a mega-diversity nation because:",
+    "options": ["Wide variety of species and ecosystems", "Largest forests", "Only endemic species", "Maximum wetlands"],
+    "answer": 0
+  },
+  {
+    "question": "Which of the following is a consumptive use value of biodiversity?",
+    "options": ["Fuel wood", "Aesthetic value", "Recreational value", "Cultural value"],
+    "answer": 0
+  },
+  {
+    "question": "The greatest threat to biodiversity is:",
+    "options": ["Habitat loss", "Ecotourism", "Medicinal use", "Conservation"],
+    "answer": 0
+  },
+  {
+    "question": "Species found only in a particular area are called:",
+    "options": ["Endemic species", "Endangered species", "Exotic species", "Vulnerable species"],
+    "answer": 0
+  },
+  {
+    "question": "Which international agreement focuses on biodiversity conservation?",
+    "options": ["Convention on Biological Diversity", "Kyoto Protocol", "Paris Agreement", "Montreal Protocol"],
+    "answer": 0
+  },
+
+  {
+    "question": "The most common indicator of water pollution is:",
+    "options": ["Dissolved Oxygen", "pH", "Salinity", "Conductivity"],
+    "answer": 0
+  },
+  {
+    "question": "BOD indicates:",
+    "options": ["Organic pollution load", "Salinity", "Hardness", "pH"],
+    "answer": 0
+  },
+  {
+    "question": "High BOD in water indicates:",
+    "options": ["Heavy organic pollution", "Clean water", "High oxygen", "Low pollution"],
+    "answer": 0
+  },
+  {
+    "question": "Major source of organic river pollution is:",
+    "options": ["Domestic sewage", "Mining", "Thermal discharge", "Salts"],
+    "answer": 0
+  },
+  {
+    "question": "Eutrophication is caused by:",
+    "options": ["Excess nutrients", "High oxygen", "Low COD", "Neutral pH"],
+    "answer": 0
+  },
+
+  {
+    "question": "The major pollutant responsible for acid rain is:",
+    "options": ["SO₂", "CO₂", "CH₄", "O₃"],
+    "answer": 0
+  },
+  {
+    "question": "Photochemical smog is caused by:",
+    "options": ["NOx and hydrocarbons", "CO₂ and SO₂", "CO and CO₂", "O₂ and N₂"],
+    "answer": 0
+  },
+  {
+    "question": "The most harmful particulate matter for lungs is:",
+    "options": ["PM2.5", "PM10", "PM100", "Dust"],
+    "answer": 0
+  },
+  {
+    "question": "Ozone in the stratosphere is:",
+    "options": ["Protective", "Harmful", "Neutral", "Insignificant"],
+    "answer": 0
+  },
+  {
+    "question": "Carbon monoxide affects:",
+    "options": ["Oxygen transport in blood", "Bones", "Vision", "Digestive system"],
+    "answer": 0
+  },
+
+  {
+    "question": "Which is a biodegradable waste?",
+    "options": ["Paper", "Plastic", "Glass", "Metal"],
+    "answer": 0
+  },
+  {
+    "question": "Municipal solid waste in India is mainly:",
+    "options": ["Organic matter", "Plastic", "Metal", "Glass"],
+    "answer": 0
+  },
+  {
+    "question": "The process of converting organic waste into manure is:",
+    "options": ["Composting", "Incineration", "Recycling", "Gasification"],
+    "answer": 0
+  },
+  {
+    "question": "E-waste mainly contains:",
+    "options": ["Toxic heavy metals", "Only organic matter", "Pure biodegradable matter", "Harmless salts"],
+    "answer": 0
+  },
+  {
+    "question": "Which metal is common in e-waste?",
+    "options": ["Lead", "Sodium", "Calcium", "Potassium"],
+    "answer": 0
+  },
+
+  {
+    "question": "Sustainability focuses on:",
+    "options": ["Meeting present needs without compromising future", "Present generation only", "Future generation only", "Profit maximization"],
+    "answer": 0
+  },
+  {
+    "question": "The three pillars of sustainability are:",
+    "options": ["Environmental, social, economic", "Political, cultural, ecological", "Scientific, cultural, financial", "Agricultural, social, cultural"],
+    "answer": 0
+  },
+  {
+    "question": "How many Sustainable Development Goals exist?",
+    "options": ["17", "15", "16", "18"],
+    "answer": 0
+  },
+  {
+    "question": "SDG 13 deals with:",
+    "options": ["Climate action", "Clean water", "Gender equality", "Life on land"],
+    "answer": 0
+  },
+  {
+    "question": "Carbon credit equals:",
+    "options": ["1 tonne CO₂", "1 kg CO₂", "10 tonnes CO₂", "100 kg CO₂"],
     "answer": 0
   }
 ]
