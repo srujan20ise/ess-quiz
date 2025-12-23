@@ -28,9 +28,9 @@ body{
   border-radius:6px;
   cursor:pointer;
 }
-.option.selected{
-  background:#2563eb;
-}
+.option.selected{background:#2563eb;}
+.correct{color:#22c55e;}
+.wrong{color:#ef4444;}
 button{
   background:#38bdf8;
   border:none;
@@ -47,54 +47,56 @@ button{
 <h2>Environmental Studies Quiz</h2>
 
 <div id="quiz" class="card">
-  <div id="quizArea">
-    <h3 id="qno"></h3>
-    <p id="question"></p>
-    <div id="options"></div>
-    <button onclick="nextQ()">Next</button>
-  </div>
-  <div id="resultArea"></div>
+  <h3 id="qno"></h3>
+  <p id="question"></p>
+  <div id="options"></div>
+  <button onclick="nextQ()">Next</button>
 </div>
 
+<div id="result" class="card" style="display:none"></div>
 
 </div>
 
 <script>
+// ---------- QUESTIONS ----------
 const questions = [
  {q:"Primary source of energy?", o:["Sun","Wind","Water","Soil"], a:0},
  {q:"BOD measures?", o:["Organic pollution","pH","Salinity","Hardness"], a:0},
  {q:"Which gas causes acid rain?", o:["SO₂","CO₂","CH₄","O₂"], a:0}
 ];
 
+// ---------- VARIABLES ----------
 let i = 0;
 let selected = null;
 let score = 0;
 let userAnswers = [];
 
-
-loadQ();
-
+// ---------- LOAD QUESTION ----------
 function loadQ(){
   const q = questions[i];
   document.getElementById("qno").innerText = "Question " + (i+1);
   document.getElementById("question").innerText = q.q;
-  const opt = document.getElementById("options");
-  opt.innerHTML = "";
-  q.o.forEach((text,idx)=>{
+
+  const optDiv = document.getElementById("options");
+  optDiv.innerHTML = "";
+
+  q.o.forEach((text, idx) => {
     const div = document.createElement("div");
     div.className = "option";
     div.innerText = text;
     div.onclick = () => selectOpt(idx, div);
-    opt.appendChild(div);
+    optDiv.appendChild(div);
   });
 }
 
+// ---------- SELECT OPTION ----------
 function selectOpt(idx, div){
   document.querySelectorAll(".option").forEach(o=>o.classList.remove("selected"));
   div.classList.add("selected");
   selected = idx;
 }
 
+// ---------- NEXT QUESTION ----------
 function nextQ(){
   if(selected === null){
     alert("Please select an option");
@@ -102,12 +104,7 @@ function nextQ(){
   }
 
   userAnswers.push(selected);
-
-if(selected === questions[i].a){
-  score++;
-}
-
-  }
+  if(selected === questions[i].a) score++;
 
   selected = null;
   i++;
@@ -115,37 +112,37 @@ if(selected === questions[i].a){
   if(i < questions.length){
     loadQ();
   }else{
-    showScore();
+    showResult();
   }
 }
-function showScore(){
-  document.getElementById("quizArea").style.display = "none";
 
-  let html = `<h2>Quiz Finished</h2>
-              <p>Your Score: <b>${score} / ${questions.length}</b></p>
-              <hr>`;
+// ---------- SHOW RESULT ----------
+function showResult(){
+  document.getElementById("quiz").style.display = "none";
+  const res = document.getElementById("result");
+  res.style.display = "block";
+
+  let html = `<h2>Score: ${score} / ${questions.length}</h2><hr>`;
 
   questions.forEach((q, idx) => {
-    html += `<div style="margin-bottom:15px">
-      <b>Q${idx + 1}.</b> ${q.q}<br>`;
-
-    q.o.forEach((opt, i) => {
-      let color = "";
-      if(i === q.a) color = "green";
-      else if(i === userAnswers[idx]) color = "red";
-
-      html += `<div style="color:${color};margin-left:10px">
-        ${opt}
-      </div>`;
+    html += `<p><b>Q${idx+1}.</b> ${q.q}</p>`;
+    q.o.forEach((opt, j) => {
+      if(j === q.a){
+        html += `<div class="correct">✔ ${opt}</div>`;
+      }else if(j === userAnswers[idx]){
+        html += `<div class="wrong">✘ ${opt}</div>`;
+      }else{
+        html += `<div>${opt}</div>`;
+      }
     });
-
-    html += `</div>`;
+    html += `<hr>`;
   });
 
-  document.getElementById("resultArea").innerHTML = html;
+  res.innerHTML = html;
 }
 
-  
+// ---------- START ----------
+loadQ();
 </script>
 
 </body>
