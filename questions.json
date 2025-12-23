@@ -434,7 +434,136 @@
     "question": "Circular economy promotes:",
     "options": ["Reuse, recycling, repair", "Single-use plastics", "Linear consumption", "More mining"],
     "answer": 0
+  },
+    {
+    "question": "Zero waste strategy aims at:",
+    "options": ["Elimination of waste generation", "Waste incineration", "Energy recovery only", "Landfilling"],
+    "answer": 0
+  },
+  {
+    "question": "Circular economy mainly focuses on:",
+    "options": ["Product reuse and resource efficiency", "Linear consumption", "Exporting waste", "Increased mining"],
+    "answer": 0
+  },
+  {
+    "question": "The linear economy model follows:",
+    "options": ["Extract–Produce–Dispose", "Reduce–Reuse–Recycle", "Cradle-to-cradle", "Reuse–Repair"],
+    "answer": 0
+  },
+  {
+    "question": "Cradle-to-cradle approach is associated with:",
+    "options": ["Circular economy", "Linear economy", "Fossil fuel use", "Urban sprawl"],
+    "answer": 0
+  },
+  {
+    "question": "LCA stands for:",
+    "options": ["Life Cycle Assessment", "Low Carbon Analysis", "Land Cost Accounting", "Life Consumption Audit"],
+    "answer": 0
+  },
+  {
+    "question": "ISO 14040 deals with:",
+    "options": ["Life Cycle Assessment", "Energy audit", "Wastewater treatment", "Product quality"],
+    "answer": 0
+  },
+  {
+    "question": "Which is NOT a phase of LCA?",
+    "options": ["Revenue generation", "Inventory analysis", "Impact assessment", "Goal definition"],
+    "answer": 0
+  },
+  {
+    "question": "Cradle-to-grave assessment includes:",
+    "options": ["Extraction to disposal", "Recycling only", "Use phase only", "Transport only"],
+    "answer": 0
+  },
+  {
+    "question": "EIA in India is governed by:",
+    "options": ["Environment Protection Act 1986", "Water Act 1974", "Air Act 1981", "Factories Act"],
+    "answer": 0
+  },
+  {
+    "question": "Public hearing in EIA ensures:",
+    "options": ["Transparency and participation", "Industrial profit", "Fast clearance", "No objections"],
+    "answer": 0
+  },
+
+  {
+    "question": "Green buildings aim to:",
+    "options": ["Reduce environmental impact", "Increase embodied energy", "Remove greenery", "Increase pollution"],
+    "answer": 0
+  },
+  {
+    "question": "Embodied energy refers to:",
+    "options": ["Energy used in production and transport", "Operational energy", "Solar energy", "Energy saved"],
+    "answer": 0
+  },
+  {
+    "question": "Passive solar design helps in:",
+    "options": ["Reducing AC use", "Increasing fossil fuel use", "Reducing lighting", "Increasing heating"],
+    "answer": 0
+  },
+  {
+    "question": "Net-zero energy buildings:",
+    "options": ["Produce as much energy as they consume", "Use no energy", "Use fossil fuels", "Are off-grid only"],
+    "answer": 0
+  },
+  {
+    "question": "Most sustainable transport mode is:",
+    "options": ["Bicycle", "Car", "Bus", "Airplane"],
+    "answer": 0
+  },
+
+  {
+    "question": "Electric vehicles are sustainable because:",
+    "options": ["Zero tailpipe emissions", "No energy required", "Cheap fuel", "No manufacturing impact"],
+    "answer": 0
+  },
+  {
+    "question": "Carbon sequestration can be enhanced by:",
+    "options": ["Afforestation", "Deforestation", "Mining", "Burning fossil fuels"],
+    "answer": 0
+  },
+  {
+    "question": "Which renewable source is most location-specific?",
+    "options": ["Tidal energy", "Solar energy", "Wind energy", "Biomass"],
+    "answer": 0
+  },
+  {
+    "question": "Best renewable option for rural electrification is:",
+    "options": ["Solar PV", "Coal", "Nuclear", "Gas"],
+    "answer": 0
+  },
+  {
+    "question": "Green engineering focuses on:",
+    "options": ["Environment-friendly design", "Profit maximization", "Fossil fuel efficiency", "Labor reduction"],
+    "answer": 0
+  },
+
+  {
+    "question": "Sustainable urbanization emphasizes:",
+    "options": ["Compact city design", "Urban sprawl", "High consumerism", "More highways"],
+    "answer": 0
+  },
+  {
+    "question": "SDG 11 relates to:",
+    "options": ["Sustainable cities", "Climate action", "Clean energy", "Zero hunger"],
+    "answer": 0
+  },
+  {
+    "question": "Carpooling helps by:",
+    "options": ["Reducing emissions", "Increasing congestion", "More fuel use", "Higher cost"],
+    "answer": 0
+  },
+  {
+    "question": "BRTS stands for:",
+    "options": ["Bus Rapid Transit System", "Bio Renewable Transport System", "Built Road Transport Scheme", "Battery Rail Transport System"],
+    "answer": 0
+  },
+  {
+    "question": "Smart cities focus on:",
+    "options": ["Efficient resource use", "Higher pollution", "Car dominance", "Urban sprawl"],
+    "answer": 0
   }
+
 
 
 ]
