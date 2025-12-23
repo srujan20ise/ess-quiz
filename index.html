@@ -64,6 +64,8 @@ const questions = [
 
 let i = 0;
 let selected = null;
+let score = 0;
+
 
 loadQ();
 
@@ -93,14 +95,28 @@ function nextQ(){
     alert("Please select an option");
     return;
   }
+
+  if(selected === questions[i].a){
+    score++;
+  }
+
   selected = null;
   i++;
+
   if(i < questions.length){
     loadQ();
   }else{
-    alert("Quiz finished!");
+    showScore();
   }
 }
+function showScore(){
+  document.getElementById("quiz").innerHTML = `
+    <h2>Quiz Finished</h2>
+    <p>Your Score: <b>${score} / ${questions.length}</b></p>
+  `;
+}
+
+  
 </script>
 
 </body>
