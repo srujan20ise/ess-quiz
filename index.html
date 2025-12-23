@@ -45,6 +45,8 @@ button{
 <div class="container">
 
 <h2>Environmental Studies Quiz</h2>
+<p id="timer" style="color:#facc15;font-weight:bold"></p>
+
 
 <div id="quiz" class="card">
   <h3 id="qno"></h3>
@@ -70,6 +72,26 @@ let i = 0;
 let selected = null;
 let score = 0;
 let userAnswers = [];
+
+let timeLeft = questions.length * 60; // 1 minute per question
+let timerInterval;
+
+function startTimer(){
+  timerInterval = setInterval(() => {
+    let m = Math.floor(timeLeft / 60);
+    let s = timeLeft % 60;
+
+    document.getElementById("timer").innerText =
+      `Time Left: ${m}:${s < 10 ? "0" + s : s}`;
+
+    timeLeft--;
+
+    if(timeLeft < 0){
+      clearInterval(timerInterval);
+      showResult();
+    }
+  }, 1000);
+}
 
 // ---------- LOAD QUESTION ----------
 function loadQ(){
@@ -118,7 +140,8 @@ function nextQ(){
 
 // ---------- SHOW RESULT ----------
 function showResult(){
-  document.getElementById("quiz").style.display = "none";
+ clearInterval(timerInterval);
+ document.getElementById("quiz").style.display = "none";
   const res = document.getElementById("result");
   res.style.display = "block";
 
@@ -143,6 +166,8 @@ function showResult(){
 
 // ---------- START ----------
 loadQ();
+startTimer();
+
 </script>
 
 </body>
