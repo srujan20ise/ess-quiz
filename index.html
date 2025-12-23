@@ -65,6 +65,7 @@ const questions = [
 let i = 0;
 let selected = null;
 let score = 0;
+let userAnswers = [];
 
 
 loadQ();
@@ -96,8 +97,12 @@ function nextQ(){
     return;
   }
 
-  if(selected === questions[i].a){
-    score++;
+  userAnswers.push(selected);
+
+if(selected === questions[i].a){
+  score++;
+}
+
   }
 
   selected = null;
@@ -110,10 +115,30 @@ function nextQ(){
   }
 }
 function showScore(){
-  document.getElementById("quiz").innerHTML = `
+  let html = `
     <h2>Quiz Finished</h2>
     <p>Your Score: <b>${score} / ${questions.length}</b></p>
+    <hr>
   `;
+
+  questions.forEach((q, idx) => {
+    html += `<div style="margin-bottom:15px">
+      <b>Q${idx + 1}.</b> ${q.q}<br>`;
+
+    q.o.forEach((opt, i) => {
+      let color = "";
+      if(i === q.a) color = "green";
+      else if(i === userAnswers[idx]) color = "red";
+
+      html += `<div style="color:${color};margin-left:10px">
+        ${opt}
+      </div>`;
+    });
+
+    html += `</div>`;
+  });
+
+  document.getElementById("quiz").innerHTML = html;
 }
 
   
