@@ -47,11 +47,15 @@ button{
 <h2>Environmental Studies Quiz</h2>
 
 <div id="quiz" class="card">
-  <h3 id="qno"></h3>
-  <p id="question"></p>
-  <div id="options"></div>
-  <button onclick="nextQ()">Next</button>
+  <div id="quizArea">
+    <h3 id="qno"></h3>
+    <p id="question"></p>
+    <div id="options"></div>
+    <button onclick="nextQ()">Next</button>
+  </div>
+  <div id="resultArea"></div>
 </div>
+
 
 </div>
 
@@ -115,11 +119,11 @@ if(selected === questions[i].a){
   }
 }
 function showScore(){
-  let html = `
-    <h2>Quiz Finished</h2>
-    <p>Your Score: <b>${score} / ${questions.length}</b></p>
-    <hr>
-  `;
+  document.getElementById("quizArea").style.display = "none";
+
+  let html = `<h2>Quiz Finished</h2>
+              <p>Your Score: <b>${score} / ${questions.length}</b></p>
+              <hr>`;
 
   questions.forEach((q, idx) => {
     html += `<div style="margin-bottom:15px">
@@ -138,7 +142,7 @@ function showScore(){
     html += `</div>`;
   });
 
-  document.getElementById("quiz").innerHTML = html;
+  document.getElementById("resultArea").innerHTML = html;
 }
 
   
