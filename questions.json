@@ -178,5 +178,263 @@
     "question": "Carbon credit equals:",
     "options": ["1 tonne CO₂", "1 kg CO₂", "10 tonnes CO₂", "100 kg CO₂"],
     "answer": 0
+  },
+    {
+    "question": "Which of the following is a biotic component of an ecosystem?",
+    "options": ["Fungi", "Light", "Temperature", "Water"],
+    "answer": 0
+  },
+  {
+    "question": "The second law of thermodynamics explains why energy transfer is inefficient because:",
+    "options": ["Energy is lost as heat", "Energy is recycled", "Matter is destroyed", "Producers are absent"],
+    "answer": 0
+  },
+  {
+    "question": "Which ecosystem has the highest net primary productivity?",
+    "options": ["Tropical rainforest", "Desert", "Tundra", "Open ocean"],
+    "answer": 0
+  },
+  {
+    "question": "The pyramid of energy is always:",
+    "options": ["Upright", "Inverted", "Spindle shaped", "Irregular"],
+    "answer": 0
+  },
+  {
+    "question": "Which is a self-sustaining natural ecosystem?",
+    "options": ["Pond", "Aquarium", "Garden", "Crop field"],
+    "answer": 0
+  },
+  {
+    "question": "Primary consumers in a food chain are:",
+    "options": ["Herbivores", "Carnivores", "Decomposers", "Omnivores"],
+    "answer": 0
+  },
+  {
+    "question": "The first trophic level consists of:",
+    "options": ["Producers", "Herbivores", "Carnivores", "Decomposers"],
+    "answer": 0
+  },
+  {
+    "question": "Food webs increase ecosystem stability because:",
+    "options": ["They provide alternate energy paths", "They reduce producers", "They remove predators", "They shorten chains"],
+    "answer": 0
+  },
+  {
+    "question": "The flow of energy in an ecosystem is:",
+    "options": ["Unidirectional", "Bidirectional", "Cyclic", "Random"],
+    "answer": 0
+  },
+  {
+    "question": "Detritus food chain begins with:",
+    "options": ["Dead organic matter", "Green plants", "Herbivores", "Carnivores"],
+    "answer": 0
+  },
+
+  {
+    "question": "Genetic diversity refers to:",
+    "options": ["Variation within a species", "Variation between ecosystems", "Species richness", "Habitat diversity"],
+    "answer": 0
+  },
+  {
+    "question": "Species diversity means:",
+    "options": ["Variety of species in an area", "Genetic variation", "Habitat variety", "Population size"],
+    "answer": 0
+  },
+  {
+    "question": "Ecosystem diversity refers to:",
+    "options": ["Different habitats and communities", "Genes in a species", "Number of organisms", "Food chains"],
+    "answer": 0
+  },
+  {
+    "question": "Endemic species are:",
+    "options": ["Found only in a specific area", "Found everywhere", "Recently introduced", "Extinct species"],
+    "answer": 0
+  },
+  {
+    "question": "The Western Ghats are important because they:",
+    "options": ["Have many endemic species", "Are industrial zones", "Are deserts", "Have no biodiversity"],
+    "answer": 0
+  },
+
+  {
+    "question": "The most common indicator of water pollution is:",
+    "options": ["Dissolved Oxygen", "Turbidity", "pH", "Hardness"],
+    "answer": 0
+  },
+  {
+    "question": "COD measures:",
+    "options": ["Chemically oxidizable matter", "Biological oxygen use", "Dissolved oxygen", "Salinity"],
+    "answer": 0
+  },
+  {
+    "question": "High BOD indicates:",
+    "options": ["Organic pollution", "Clean water", "High oxygen", "Low microbes"],
+    "answer": 0
+  },
+  {
+    "question": "DO in water is important for:",
+    "options": ["Aquatic life", "Sedimentation", "pH control", "Hardness"],
+    "answer": 0
+  },
+  {
+    "question": "Eutrophication is mainly caused by:",
+    "options": ["Nitrates and phosphates", "Oxygen", "Carbon monoxide", "Salts"],
+    "answer": 0
+  },
+
+  {
+    "question": "The main pollutant responsible for acid rain is:",
+    "options": ["SO₂", "CO₂", "O₃", "CH₄"],
+    "answer": 0
+  },
+  {
+    "question": "Photochemical smog is formed due to:",
+    "options": ["NOx and hydrocarbons", "CO₂", "SO₂", "Oxygen"],
+    "answer": 0
+  },
+  {
+    "question": "PM2.5 is dangerous because it:",
+    "options": ["Penetrates deep into lungs", "Is visible", "Is heavy", "Settles quickly"],
+    "answer": 0
+  },
+  {
+    "question": "Ozone in the stratosphere:",
+    "options": ["Protects from UV radiation", "Causes smog", "Is toxic", "Has no role"],
+    "answer": 0
+  },
+  {
+    "question": "Carbon monoxide affects humans by:",
+    "options": ["Reducing oxygen transport", "Damaging bones", "Affecting vision only", "Causing acidity"],
+    "answer": 0
+  },
+    {
+    "question": "Which of the following is a non-biodegradable waste?",
+    "options": ["Plastic", "Paper", "Food waste", "Wood"],
+    "answer": 0
+  },
+  {
+    "question": "Municipal solid waste in Indian cities mainly consists of:",
+    "options": ["Organic matter", "Metal", "Glass", "Hazardous waste"],
+    "answer": 0
+  },
+  {
+    "question": "The process of controlled burning of waste is called:",
+    "options": ["Incineration", "Composting", "Landfilling", "Recycling"],
+    "answer": 0
+  },
+  {
+    "question": "Biomedical waste should be disposed of by:",
+    "options": ["Incineration", "Open dumping", "Composting", "Landfilling"],
+    "answer": 0
+  },
+  {
+    "question": "E-waste is hazardous mainly because it contains:",
+    "options": ["Heavy metals", "Organic matter", "Biodegradable plastics", "Paper"],
+    "answer": 0
+  },
+  {
+    "question": "Which metal is most commonly found in e-waste?",
+    "options": ["Lead", "Calcium", "Sodium", "Potassium"],
+    "answer": 0
+  },
+  {
+    "question": "The best method to manage biodegradable waste is:",
+    "options": ["Composting", "Open dumping", "Burning", "Deep burial"],
+    "answer": 0
+  },
+  {
+    "question": "Which principle is most eco-friendly for waste management?",
+    "options": ["Reduce, Reuse, Recycle", "Incineration", "Landfilling", "Open dumping"],
+    "answer": 0
+  },
+  {
+    "question": "Leachate is:",
+    "options": ["Liquid from decomposing waste", "Solid waste", "Air pollutant", "Recyclable material"],
+    "answer": 0
+  },
+  {
+    "question": "Landfills mainly cause:",
+    "options": ["Soil and groundwater pollution", "Soil improvement", "Water purification", "Carbon sequestration"],
+    "answer": 0
+  },
+
+  {
+    "question": "Sustainability aims at:",
+    "options": ["Meeting present needs without harming future", "Using resources fast", "Profit maximization", "Ignoring environment"],
+    "answer": 0
+  },
+  {
+    "question": "The three pillars of sustainability are:",
+    "options": ["Environmental, social, economic", "Political, cultural, financial", "Scientific, ethical, legal", "Agricultural, industrial, social"],
+    "answer": 0
+  },
+  {
+    "question": "How many Sustainable Development Goals (SDGs) are there?",
+    "options": ["17", "15", "16", "18"],
+    "answer": 0
+  },
+  {
+    "question": "SDG 7 relates to:",
+    "options": ["Affordable and clean energy", "Climate action", "Life on land", "Zero hunger"],
+    "answer": 0
+  },
+  {
+    "question": "SDG 13 focuses on:",
+    "options": ["Climate action", "Clean water", "Gender equality", "Industry innovation"],
+    "answer": 0
+  },
+
+  {
+    "question": "Carbon footprint measures:",
+    "options": ["Total greenhouse gas emissions", "Water usage", "Land usage", "Energy efficiency"],
+    "answer": 0
+  },
+  {
+    "question": "Carbon neutrality means:",
+    "options": ["Balancing CO₂ emissions and absorption", "Zero energy use", "Only renewable energy", "No industries"],
+    "answer": 0
+  },
+  {
+    "question": "One carbon credit equals:",
+    "options": ["1 tonne CO₂", "1 kg CO₂", "10 tonnes CO₂", "100 kg CO₂"],
+    "answer": 0
+  },
+  {
+    "question": "Kyoto Protocol is related to:",
+    "options": ["Greenhouse gas reduction", "Ozone protection", "Biodiversity", "Solid waste"],
+    "answer": 0
+  },
+  {
+    "question": "Paris Agreement was signed in:",
+    "options": ["2015", "2010", "2005", "2020"],
+    "answer": 0
+  },
+
+  {
+    "question": "ISO 14001 is related to:",
+    "options": ["Environmental management systems", "Product quality", "Food safety", "Energy labeling"],
+    "answer": 0
+  },
+  {
+    "question": "The Clean Development Mechanism (CDM) belongs to:",
+    "options": ["Kyoto Protocol", "Paris Agreement", "Montreal Protocol", "Basel Convention"],
+    "answer": 0
+  },
+  {
+    "question": "Which gas has the highest global warming potential?",
+    "options": ["SF₆", "CO₂", "Methane", "N₂O"],
+    "answer": 0
+  },
+  {
+    "question": "Green buildings help sustainability by:",
+    "options": ["Reducing energy and water use", "Increasing concrete use", "Removing vegetation", "Increasing cost"],
+    "answer": 0
+  },
+  {
+    "question": "Circular economy promotes:",
+    "options": ["Reuse, recycling, repair", "Single-use plastics", "Linear consumption", "More mining"],
+    "answer": 0
   }
+
+
 ]
